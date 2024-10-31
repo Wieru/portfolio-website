@@ -437,6 +437,11 @@ header.active {
   border-bottom: 2px solid var(--textColor);
 }
 
+.project-link {
+  display: flex;  
+  align-items: center; 
+}
+
 .project-link img {
   width: 1.6rem;
   height: 1.6rem;
