@@ -10,11 +10,12 @@
 body {
   font-size: 10px;
   overflow-x: hidden !important;
+  background: #ececec;
 }
 
 :root {
   /* Colors */
-  --White: #fff;
+  --White: #ececec;
   --DarkWhiteBcg: #fafafa;
   --main: linear-gradient(
     to left bottom,
@@ -432,13 +433,14 @@ header.active {
   margin: 5rem auto;
   width: 85%;
   box-shadow: var(--shadow);
-  padding: 1rem;
+
 }
 
 .project-content-card img {
-  width: 70%;
+  width: 80%;
   display: block;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .project-info {
@@ -498,8 +500,8 @@ header.active {
 }
 
 .technologies-icons img {
-  height: 2.2rem;
-  width: 2.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
   margin: 0.8rem;
 }
 
