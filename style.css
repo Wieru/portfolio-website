@@ -17,21 +17,7 @@ body {
   /* Colors */
   --White: #ececec;
   --DarkWhiteBcg: #fafafa;
-  --main: linear-gradient(
-    to left bottom,
-    #7d62f2,
-    #7f65ee,
-    #8168ea,
-    #836ae6,
-    #856de2,
-    #8a6cdc,
-    #8f6bd6,
-    #936ad0,
-    #9a65c7,
-    #9f60be,
-    #a45bb5,
-    #a757ac
-  );
+  --main: linear-gradient(90deg, rgba(53,205,206,1) 0%, rgba(2,193,194,1) 35%, rgba(0,151,152,1) 100%);
 
   --secondary: linear-gradient(
     to right bottom,
@@ -42,25 +28,12 @@ body {
     #c830b3
   );
 
-  --textColor: #4c4486;
-  --textLightColor: #9e9d9d;
+  --textColor: #2a245e;
+  --textLightColor: #2a245e;
 
   /* Colors Hover */
-  --mainHover: linear-gradient(
-    to left bottom,
-    #9e8fdc,
-    #9c8cdd,
-    #9989dd,
-    #9785de,
-    #9482de,
-    #977fdb,
-    #9a7cd8,
-    #9d79d5,
-    #a576ce,
-    #ab74c7,
-    #b172c0,
-    #b570b9
-  );
+  --mainHover: linear-gradient(-225deg, rgb(183, 248, 219) 0%, rgb(80, 167, 194) 100%);
+  
   --secondaryHover: linear-gradient(
     to right bottom,
     rgba(252, 52, 34, 0.8235294117647058),
@@ -188,7 +161,7 @@ header.active {
 }
 
 .burger.active > span {
-  background: var(--White);
+  background: var(--textColor);
 }
 
 .burger span {
@@ -222,6 +195,9 @@ header.active {
 .menu-link {
   position: relative;
   cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--textColor);
 }
 
 /* DESKTOP MENU */
@@ -267,6 +243,10 @@ header.active {
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     color: var(--White);
+  }
+
+  .menu-link:last-child:hover {
+    background: var(--mainHover);
   }
 
   .menu-link:last-child::after {
@@ -324,6 +304,7 @@ header.active {
   border-radius: 0.5rem;
   display: flex;
   gap: 1rem;
+  height: 70px;
 }
 
 .scroll-down-button {
